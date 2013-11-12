@@ -1,0 +1,53 @@
+<%= form_for(@visitum) do |f| %>
+  <% if @visitum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visitum.errors.count, "error") %> prohibited this visitum from being saved:</h2>
+
+      <ul>
+      <% @visitum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :imovel_id %><br>
+    <%= f.number_field :imovel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hora %><br>
+    <%= f.datetime_select :hora %>
+  </div>
+  <div class="field">
+    <%= f.label :atividade_id %><br>
+    <%= f.number_field :atividade_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tratamento_id %><br>
+    <%= f.number_field :tratamento_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pesquisa_id %><br>
+    <%= f.number_field :pesquisa_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pendencia %><br>
+    <%= f.number_field :pendencia %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :ciclo %><br>
+    <%= f.number_field :ciclo %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.number_field :usuario_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

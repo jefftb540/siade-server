@@ -1,0 +1,29 @@
+<%= form_for(@lado) do |f| %>
+  <% if @lado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lado.errors.count, "error") %> prohibited this lado from being saved:</h2>
+
+      <ul>
+      <% @lado.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quadra_id %><br>
+    <%= f.number_field :quadra_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rua_id %><br>
+    <%= f.number_field :rua_id %>
+  </div>
+  <div class="field">
+    <%= f.label :referencia %><br>
+    <%= f.text_field :referencia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

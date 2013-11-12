@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imovel:</strong>
+  <%= @visitum.imovel_id %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @visitum.hora %>
+</p>
+
+<p>
+  <strong>Atividade:</strong>
+  <%= @visitum.atividade_id %>
+</p>
+
+<p>
+  <strong>Tratamento:</strong>
+  <%= @visitum.tratamento_id %>
+</p>
+
+<p>
+  <strong>Pesquisa:</strong>
+  <%= @visitum.pesquisa_id %>
+</p>
+
+<p>
+  <strong>Pendencia:</strong>
+  <%= @visitum.pendencia %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @visitum.data %>
+</p>
+
+<p>
+  <strong>Ciclo:</strong>
+  <%= @visitum.ciclo %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @visitum.usuario_id %>
+</p>
+
+<%= link_to 'Edit', edit_visitum_path(@visitum) %> |
+<%= link_to 'Back', visita_path %>

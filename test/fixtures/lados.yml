@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quadra_id: 1
+  rua_id: 1
+  referencia: MyString
+
+two:
+  quadra_id: 1
+  rua_id: 1
+  referencia: MyString

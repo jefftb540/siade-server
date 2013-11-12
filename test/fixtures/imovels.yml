@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lado_id: 1
+  tipo_id: 1
+  habitantes: 1
+
+two:
+  lado_id: 1
+  tipo_id: 1
+  habitantes: 1
