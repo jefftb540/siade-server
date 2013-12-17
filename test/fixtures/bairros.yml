@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  cidade_id: 1
-  nome_bairro: MyString
-
-two:
-  cidade_id: 1
-  nome_bairro: MyString
