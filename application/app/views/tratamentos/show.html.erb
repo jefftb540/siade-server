@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Eliminados:</strong>
+  <%= @tratamento.eliminados %>
+</p>
+
+<p>
+  <strong>Imovel tratado:</strong>
+  <%= @tratamento.imovel_tratado %>
+</p>
+
+<p>
+  <strong>Tipo larvicida:</strong>
+  <%= @tratamento.tipo_larvicida %>
+</p>
+
+<p>
+  <strong>Quantidade larvicida:</strong>
+  <%= @tratamento.quantidade_larvicida %>
+</p>
+
+<p>
+  <strong>Quantidade deposito tratado:</strong>
+  <%= @tratamento.quantidade_deposito_tratado %>
+</p>
+
+<%= link_to 'Edit', edit_tratamento_path(@tratamento) %> |
+<%= link_to 'Back', tratamentos_path %>

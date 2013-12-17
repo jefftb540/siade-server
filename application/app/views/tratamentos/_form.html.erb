@@ -1,0 +1,37 @@
+<%= form_for(@tratamento) do |f| %>
+  <% if @tratamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tratamento.errors.count, "error") %> prohibited this tratamento from being saved:</h2>
+
+      <ul>
+      <% @tratamento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :eliminados %><br>
+    <%= f.number_field :eliminados %>
+  </div>
+  <div class="field">
+    <%= f.label :imovel_tratado %><br>
+    <%= f.number_field :imovel_tratado %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_larvicida %><br>
+    <%= f.text_field :tipo_larvicida %>
+  </div>
+  <div class="field">
+    <%= f.label :quantidade_larvicida %><br>
+    <%= f.text_field :quantidade_larvicida %>
+  </div>
+  <div class="field">
+    <%= f.label :quantidade_deposito_tratado %><br>
+    <%= f.number_field :quantidade_deposito_tratado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

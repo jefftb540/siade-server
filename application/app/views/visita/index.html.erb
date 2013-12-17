@@ -1,0 +1,43 @@
+<h1>Listing visita</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imovel</th>
+      <th>Hora</th>
+      <th>Atividade</th>
+      <th>Tratamento</th>
+      <th>Pesquisa</th>
+      <th>Pendencia</th>
+      <th>Data</th>
+      <th>Ciclo</th>
+      <th>Usuario</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visita.each do |visitum| %>
+      <tr>
+        <td><%= visitum.imovel_id %></td>
+        <td><%= visitum.hora %></td>
+        <td><%= visitum.atividade_id %></td>
+        <td><%= visitum.tratamento_id %></td>
+        <td><%= visitum.pesquisa_id %></td>
+        <td><%= visitum.pendencia %></td>
+        <td><%= visitum.data %></td>
+        <td><%= visitum.ciclo %></td>
+        <td><%= visitum.usuario_id %></td>
+        <td><%= link_to 'Show', visitum %></td>
+        <td><%= link_to 'Edit', edit_visitum_path(visitum) %></td>
+        <td><%= link_to 'Destroy', visitum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visitum', new_visitum_path %>

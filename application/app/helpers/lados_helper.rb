@@ -1,0 +1,2 @@
+module LadosHelper
+end

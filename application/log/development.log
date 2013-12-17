@@ -1,0 +1,1019 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 16:20:49 -0300
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile.):
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:58:in `rescue in resolve_hash_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:55:in `resolve_hash_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:46:in `resolve_string_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/connection_specification.rb:30:in `spec'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:39:in `establish_connection'
+  activerecord (4.0.0) lib/active_record/railtie.rb:175:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.0.0) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.0.0) lib/active_record/base.rb:322:in `<module:ActiveRecord>'
+  activerecord (4.0.0) lib/active_record/base.rb:22:in `<top (required)>'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:228:in `require'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:228:in `block in require'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:213:in `load_dependency'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:228:in `require'
+  activerecord (4.0.0) lib/active_record/schema_migration.rb:3:in `<top (required)>'
+  activerecord (4.0.0) lib/active_record/migration.rb:783:in `schema_migrations_table_name'
+  activerecord (4.0.0) lib/active_record/migration.rb:791:in `current_version'
+  activerecord (4.0.0) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__139411915__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 16:27:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__103136957__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEstados (20130913183212)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (156.6ms)[0m  [1mCREATE TABLE "estados" ("id" serial primary key, "nome_estado" character varying(255), "sigla" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183212"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCidades (20130913183214)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (42.1ms)[0m  [1mCREATE TABLE "cidades" ("id" serial primary key, "estado_id" integer, "nome_cidade" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183214"]]
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBairros (20130913183217)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (51.3ms)[0m  [1mCREATE TABLE "bairros" ("id" serial primary key, "cidade_id" integer, "nome_bairro" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183217"]]
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateQuadras (20130913183219)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (54.5ms)[0m  [1mCREATE TABLE "quadras" ("id" serial primary key, "bairro_id" integer, "total_imoveis" integer, "total_c" integer, "total_r" integer, "total_pe" integer, "total_tb" integer, "total_o" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183219"]]
+  [1m[36m (14.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLados (20130913183222)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (33.2ms)[0m  [1mCREATE TABLE "lados" ("id" serial primary key, "quadra_id" integer, "rua_id" integer, "referencia" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183222"]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRuas (20130913183224)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (33.5ms)[0m  [1mCREATE TABLE "ruas" ("id" serial primary key, "nome_rua" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183224"]]
+  [1m[36m (13.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateImovels (20130913183227)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (44.9ms)[0m  [1mCREATE TABLE "imovels" ("id" serial primary key, "lado_id" integer, "tipo_id" integer, "habitantes" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183227"]]
+  [1m[36m (13.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTipos (20130913183229)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (45.5ms)[0m  [1mCREATE TABLE "tipos" ("id" serial primary key, "nome_tipo" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183229"]]
+  [1m[36m (12.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVisita (20130913183231)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (47.7ms)[0m  [1mCREATE TABLE "visita" ("id" serial primary key, "imovel_id" integer, "hora" timestamp, "atividade_id" integer, "tratamento_id" integer, "pesquisa_id" integer, "pendencia" integer, "data" date, "ciclo" integer, "usuario_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183231"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAtividades (20130913183234)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (38.6ms)[0m  [1mCREATE TABLE "atividades" ("id" serial primary key, "descricao" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183234"]]
+  [1m[36m (10.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTratamentos (20130913183236)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (52.0ms)[0m  [1mCREATE TABLE "tratamentos" ("id" serial primary key, "eliminados" integer, "imovel_tratado" integer, "tipo_larvicida" character varying(255), "quantidade_larvicida" float, "quantidade_deposito_tratado" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183236"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePesquisas (20130913183239)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (37.9ms)[0m  [1mCREATE TABLE "pesquisas" ("id" serial primary key, "a1" integer, "a2" integer, "b" integer, "c" integer, "d1" integer, "d2" integer, "e" integer, "imovel_especionado" integer, "n_amostra_inicial" integer, "n_amostra_final" integer, "quantidade_tubitos" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183239"]]
+  [1m[36m (8.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsuarios (20130913183241)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (72.8ms)[0m  [1mCREATE TABLE "usuarios" ("id" serial primary key, "nome" character varying(255), "codigo" character varying(255), "senha" character varying(255), "nivel" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130913183241"]]
+  [1m[36m (18.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 16:28:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 67ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imovel" for 127.0.0.1 at 2013-09-17 16:28:50 -0300
+
+ActionController::RoutingError (No route matches [GET] "/imovel"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (65.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (170.1ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2013-09-17 16:28:59 -0300
+
+ActionController::RoutingError (No route matches [GET] "/usuario"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (50.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2013-09-17 16:29:02 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 2737ms (Views: 2703.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/imovels.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/bairros.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/atividades.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/cidades.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/estados.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/lados.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/pesquisas.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/quadras.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/ruas.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/tipos.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/tratamentos.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/visita.css?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/atividades.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/bairros.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/cidades.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/estados.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/imovels.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/lados.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/quadras.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/pesquisas.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/ruas.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/tipos.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/tratamentos.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/visita.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-17 16:29:05 -0300
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2013-09-17 16:29:46 -0300
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (103.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (105.1ms)
+Completed 200 OK in 115ms (Views: 112.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/usuarios" for 127.0.0.1 at 2013-09-17 16:30:42 -0300
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XxGRM/nNYeFRd1GAM/DvJeF2EjJSwJmajK5wzzTUi4g=", "usuario"=>{"nome"=>"Cristiano", "codigo"=>"01", "senha"=>"samsung0503", "nivel"=>"1"}, "commit"=>"Create Usuario"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (53.0ms)[0m  INSERT INTO "usuarios" ("codigo", "created_at", "nivel", "nome", "senha", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["codigo", "01"], ["created_at", Tue, 17 Sep 2013 19:30:42 UTC +00:00], ["nivel", 1], ["nome", "Cristiano"], ["senha", "samsung0503"], ["updated_at", Tue, 17 Sep 2013 19:30:42 UTC +00:00]]
+  [1m[36m (15.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/usuarios/1
+Completed 302 Found in 76ms (ActiveRecord: 69.4ms)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2013-09-17 16:30:42 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (1.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2013-09-17 16:30:52 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2013-09-17 16:31:02 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered usuarios/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/usuarios/1/edit" for 127.0.0.1 at 2013-09-17 16:31:08 -0300
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered usuarios/_form.html.erb (9.3ms)
+  Rendered usuarios/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2013-09-17 16:31:16 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 16:52:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 54ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/siade" for 127.0.0.1 at 2013-09-17 16:53:07 -0300
+
+ActionController::RoutingError (No route matches [GET] "/siade"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (92.3ms)
+
+
+Started GET "/ususarios" for 127.0.0.1 at 2013-09-17 16:53:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/ususarios"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2013-09-17 16:53:18 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 145ms (Views: 134.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/atividades.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/cidades.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/bairros.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/estados.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/imovels.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/lados.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/pesquisas.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/quadras.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/ruas.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/tipos.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/tratamentos.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/visita.css?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/atividades.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/bairros.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/cidades.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/estados.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/imovels.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/lados.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/pesquisas.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/ruas.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/quadras.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/tipos.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/tratamentos.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/visita.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-17 16:53:19 -0300
+
+
+Started GET "/index" for 127.0.0.1 at 2013-09-17 16:53:26 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.0ms)
+
+
+Started GET "/imovels" for 127.0.0.1 at 2013-09-17 16:53:38 -0300
+Processing by ImovelsController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `belong_to' for #<Class:0xb5233970>):
+  app/models/imovel.rb:2:in `<class:Imovel>'
+  app/models/imovel.rb:1:in `<top (required)>'
+  app/controllers/imovels_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/lados" for 127.0.0.1 at 2013-09-17 16:54:02 -0300
+Processing by LadosController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `belong_to' for #<Class:0x99c5a3c>):
+  app/models/lado.rb:2:in `<class:Lado>'
+  app/models/lado.rb:1:in `<top (required)>'
+  app/controllers/lados_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/bairros" for 127.0.0.1 at 2013-09-17 16:54:13 -0300
+Processing by BairrosController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `belong_to' for #<Class:0xb5d2b724>):
+  app/models/bairro.rb:3:in `<class:Bairro>'
+  app/models/bairro.rb:2:in `<top (required)>'
+  app/controllers/bairros_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/estados" for 127.0.0.1 at 2013-09-17 16:54:20 -0300
+Processing by EstadosController#index as HTML
+  [1m[36mEstado Load (0.7ms)[0m  [1mSELECT "estados".* FROM "estados"[0m
+  Rendered estados/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 21ms (Views: 10.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/cidades" for 127.0.0.1 at 2013-09-17 16:54:30 -0300
+Processing by CidadesController#index as HTML
+  [1m[35mCidade Load (0.7ms)[0m  SELECT "cidades".* FROM "cidades"
+  Rendered cidades/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 90ms (Views: 11.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/bairros" for 127.0.0.1 at 2013-09-17 16:54:39 -0300
+Processing by BairrosController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `belong_to' for #<Class:0x99c5c44>):
+  app/models/bairro.rb:3:in `<class:Bairro>'
+  app/models/bairro.rb:2:in `<top (required)>'
+  app/controllers/bairros_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/cidades/new" for 127.0.0.1 at 2013-09-17 16:54:54 -0300
+Processing by CidadesController#new as HTML
+  Rendered cidades/_form.html.erb (25.4ms)
+  Rendered cidades/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/cidades" for 127.0.0.1 at 2013-09-17 16:55:41 -0300
+Processing by CidadesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YOGQ9ec2qMnqAgzpYKOAORpa3zZT8UKg3qkIeJAhF6Y=", "cidade"=>{"estado_id"=>"1", "nome_cidade"=>"Pau dos Ferros"}, "commit"=>"Create Cidade"}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "cidades" ("created_at", "estado_id", "nome_cidade", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 17 Sep 2013 19:55:41 UTC +00:00], ["estado_id", 1], ["nome_cidade", "Pau dos Ferros"], ["updated_at", Tue, 17 Sep 2013 19:55:41 UTC +00:00]]
+  [1m[36m (23.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/cidades/1
+Completed 302 Found in 37ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/cidades/1" for 127.0.0.1 at 2013-09-17 16:55:41 -0300
+Processing by CidadesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCidade Load (1.5ms)[0m  SELECT "cidades".* FROM "cidades" WHERE "cidades"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered cidades/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cidades" for 127.0.0.1 at 2013-09-17 16:55:47 -0300
+Processing by CidadesController#index as HTML
+  [1m[36mCidade Load (1.0ms)[0m  [1mSELECT "cidades".* FROM "cidades"[0m
+  Rendered cidades/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/visitums" for 127.0.0.1 at 2013-09-17 16:55:58 -0300
+
+ActionController::RoutingError (No route matches [GET] "/visitums"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.2ms)
+
+
+Started GET "/visitum" for 127.0.0.1 at 2013-09-17 16:56:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/visitum"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (48.9ms)
+
+
+Started GET "/atividades" for 127.0.0.1 at 2013-09-17 16:56:08 -0300
+Processing by AtividadesController#index as HTML
+  [1m[35mAtividade Load (0.7ms)[0m  SELECT "atividades".* FROM "atividades"
+  Rendered atividades/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 15.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/atividades/new" for 127.0.0.1 at 2013-09-17 16:56:12 -0300
+Processing by AtividadesController#new as HTML
+  Rendered atividades/_form.html.erb (17.9ms)
+  Rendered atividades/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/atividades" for 127.0.0.1 at 2013-09-17 16:56:14 -0300
+Processing by AtividadesController#index as HTML
+  [1m[36mAtividade Load (0.8ms)[0m  [1mSELECT "atividades".* FROM "atividades"[0m
+  Rendered atividades/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-23 16:25:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 122ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-09-23 16:54:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (157.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-09-23 16:54:42 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (75.7ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2013-09-23 16:54:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (11.0ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 343ms (Views: 247.5ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/atividades.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/estados.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/cidades.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/bairros.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/imovels.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/lados.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/pesquisas.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/quadras.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/ruas.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/tipos.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/tratamentos.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/visita.css?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/atividades.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/cidades.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:56 -0300
+
+
+Started GET "/assets/bairros.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/estados.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/imovels.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/lados.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/pesquisas.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/quadras.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/ruas.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/tipos.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/tratamentos.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/visita.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-23 16:59:57 -0300
